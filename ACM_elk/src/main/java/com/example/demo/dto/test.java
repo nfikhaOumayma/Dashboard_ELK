@@ -13,7 +13,7 @@ public class test {
 	    private String productDescription;
 	   
 
-	    public test(int month, String productDescription, long count) {
+	    public test(int month, String productDescription) {
 	        this.month = month;
 	        this.productDescription = productDescription;
 	    }
