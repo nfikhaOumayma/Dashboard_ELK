@@ -11,11 +11,10 @@ import lombok.NoArgsConstructor;
 public class test {
 	  private int month;
 	    private String productDescription;
-	    private long count;
+	   
 
 	    public test(int month, String productDescription, long count) {
 	        this.month = month;
 	        this.productDescription = productDescription;
-	        this.count = count;
 	    }
 }
