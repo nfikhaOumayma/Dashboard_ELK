@@ -78,6 +78,6 @@ public interface ACMLoanElasticSearchRepository extends JpaRepository<Loan, Long
 			+ " FROM Loan a WHERE( a.readyForDisb=1) ")
 	List<ExpiredLoans> getLoansToBeDisbursed();
 
-	
+	//test 2 de pull
 
 }
