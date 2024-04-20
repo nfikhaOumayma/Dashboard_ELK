@@ -44,4 +44,19 @@ public interface AcmCollectionElasticSearchRepository extends JpaRepository<AcmC
 			+ "FROM AcmCollection c" + " GROUP BY c.branchDescription"
 			+ " ORDER BY c.branchDescription DESC ")
 	List<VoletCollectionByBranch> getNombreDossierByBranch();
+
+	// il manque les query des collection légale 
+
+	/*
+	 * Cela vous permettra de voir la performance de chaque agent en termes de montant collecté.
+	 * SELECT COLLECTION_OWNER_NAME, SUM(AMOUNT) AS Montant_Total_Collections FROM
+	 * ACM.dbo.ACM_COLLECTION GROUP BY COLLECTION_OWNER_NAME;
+	 */
+
+	/*To retrieve the total amount ,the unpaid amount and  the paid amount of every collection, you can use the following SQL query:
+	 * SELECT ID_ACM_COLLECTION, AMOUNT AS Total_Amount, UNPAID_AMOUNT AS Remaining_Amount, AMOUNT -
+	 * UNPAID_AMOUNT AS Paid_Amount FROM ACM.dbo.ACM_COLLECTION;
+	 */
+	
+	
 }
