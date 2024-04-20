@@ -22,7 +22,7 @@ public interface ACMCustomerRep extends JpaRepository<AcmCustomer, Long> {
 			  ON c.ID_ACM_CUSTOMER =l.CUSTOMER_ID
 			  group by gender*/
 
-
+/* test de pull*/
 			
 	/*find all active customers by gender
 	  SELECT count(*) as clients, [GENDER]
